@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get your weather forecast here!"> 
+    <meta name="author" content="Bilikis B. Balogun" >
+    <meta name="copyright" content="BiliHub">
+    <title> Globweather</title>
+    <link rel="stylesheet"  href="GBweather.css">
+
+    <link rel="manifest" href="/manifest.json">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
+   </head>
+   <body>
+     <div class="logo-area"><a href="#"><img style="margin-top:30px;max-height:75px;max-width:100px;" src="GB_img.jpg" alt="BiliHub">
+        </a></div>
+    <nav>
+      <div id="navbar" style="margin-top:50px;">
+       
+       <div class="top-navbar" style="margin-top:20px">
+        <ul >
+          <li><a href="#">Forcast Home</a></li>
+          <li><a href="#">Search</a></li>  
+          <li><a href="#">Contact</a></li>                                      
+        </ul>
+       </div>
+       </div>
+       </nav>
+       <input type="radio" name="image" id="B1" checked>
+       <input type="radio" name="image" id="B2">
+       
+     <div class="slide-img" id="one">
+         <img style="margin:50px auto 0 auto;border:5px solid black" src="weatherForcast-img.jpg">
+         
+         <label for="B2" class="pre"> </label>
+         <label for="B1" class="post"></label>
+     </div>
+     <div class="slide-img" id="two">
+         <img style="margin:50px auto 0 auto;border:5px solid black" src="BB-cloud.jpeg">
+         <label for="B1" class="pre"> </label>
+         <label for="B2" class="post"></label>
+     </div>
+     <div class="Bnav">
+         <label class="bullet" id="dot1" for="B1"></label>
+         <label class="bullet" id="dot2" for="B2"></label>
+     </div>
+<article>
+     <div class="container">
+         <div id="content1">
+             <p style="color:skyblue">Check what tomorrow brings in your city....</p>
+            <p style="color:skyblue">'ill you need an <b><big>umbrella</big></b> tomorrow?</2>
+            <h1>ASK Globweather!</h1>
+            <div class="input">
+                <input type="text" list="cities" class="inputvalue" placeholder="Enter your city">
+                <datalist id="cities">
+                    <option value="New York">
+                </datalist>
+                <input type="submit" value="Search" class="button" onclick="Jack()"></div>
+            
+            <div class="display">
+                <p style="font-size:larger;text-emphasis: emphasis 20px;" class="name"></p>
+                <p class="weather" padding="0 0 0 20px"></p>
+                <p class="weather"></p>
+                <p class="weather"></p>
+                <p class="weather"></p>
+                
+            </div>
+        
+    </div>
+         <div id="content2">
+             <h1>Spring</h1>
+             <img class="img1-spring" src="spring-img.jpg">
+            </div>
+         <div id="content3">
+             <h1>Summer</h1>
+            <img class="img2-summer" src="summer-img.jpg">
+         </div>
+         <div id="content4">
+             <h1>Autumn</h1>
+            <img class="img3-autumn" src="autumn-img.jpg"> 
+        </div>
+         <div id="content5">
+             <h1>Winter</h1>
+            <img class="img4-winter" src="winter-img.png">
+         </div>
+     </div>
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+       <script src="GBweather.js"></script>
+       <script>
+           if('serviceWorker' in navigator){
+               navigator.serviceWorker
+               .register("/sw.js")
+               .then (function() {
+                   console.log("serviceWorker registered")
+               });
+           };
+       </script>
+    </body>
+</html>
