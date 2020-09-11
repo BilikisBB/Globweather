@@ -1,0 +1,51 @@
+{
+    "name":"Globweather",
+    "short_name":"GBweather",
+    "start_url": "/Home.html",
+    "display": "standalone",
+    "background_color":"limegreen",
+    "theme_color":"green",
+    "orientation":"portrait-primary",
+    "icon":[
+        {
+            "src":"/icon_img/icon-72x72.jpg",
+            "type":"image/jpg",
+            "sizes":"72x72"
+        },
+        {
+            "src":"/icon_img/icon-92x92.jpg",
+            "type":"image/jpg",
+            "sizes":"92x92"
+        },
+        {
+            "src":"/icon_img/icon-512x512.jpg",
+            "type":"image/jpg",
+            "sizes":"512x512"
+        },
+        {
+            "src":"/icon_img/icon-192x192.jpg",
+            "type":"image/jpg",
+            "sizes":"192x192"
+        },
+        {
+            "src":"/icon_img/icon-144x144.jpg",
+            "type":"image/jpg",
+            "sizes":"144x144"
+        },
+        {
+            "src":"/icon_img/icon-128x128.jpg",
+            "type":"image/jpg",
+            "sizes":"128x128"
+        },
+        {
+            "src":"/icon_img/icon-152x152.jpg",
+            "type":"image/jpg",
+            "sizes":"152x152"
+        },
+        {
+            "src":"/icon_img/icon-384x384.jpg",
+            "type":"image/jpg",
+            "sizes":"384x384"
+        }
+    ]
+}
